@@ -1,0 +1,219 @@
+/* reset */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* estilos del header */
+
+/* AÑADIENDO FLEXBOX EN EL NAV!!!!!!! */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    text-align: end;
+    background: rgb(0, 132, 255);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header span{
+    color: white;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px #222;
+    font-size: 21px;
+    font-style: italic;
+    margin-left: 5%;
+}
+
+
+header nav {
+    width: 50%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+
+header nav li{
+    list-style: none;
+}
+
+header nav li a {
+    color: white;
+    text-align: end;
+    text-decoration: none;
+}
+
+/* estilos del main */
+#nosotros {
+    background-image: url("../images/fondo-vaca.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 3px #111;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+#nosotros img {
+    margin: 20px 0px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 15px #333;
+}
+
+#nosotros p {
+    margin: 0px auto;
+    width: 50%;
+}
+
+/* estilos de los productos */
+
+/* AGREGANDO GRID!!! */
+#productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 5%;
+
+    padding: 20px 0px;
+    text-align: center;
+}
+
+main {
+    margin-right: auto;
+    margin-left: auto;
+    width: 94%;
+}
+
+main h2 {
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(0, 132, 255);
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+#productos article h3 {
+    margin: 8px 0px;
+}
+
+#productos article img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 1px 1px 5px #444;
+    height: 200px;
+}
+
+#productos article p {
+    margin-bottom: 10px;
+}
+
+#productos article a {
+    background: rgb(0, 132, 255);
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 18px 10px;
+}
+
+/* estilos del footer */
+#footer h4{
+    background: rgb(0, 132, 255);
+    color: white;
+    margin-top: 30px;
+    padding: 20px 0px;
+}
+
+/* estilos especifico de los productos */
+.producto {
+    text-align: center;
+}
+
+.producto p {
+    margin: 10px auto;
+    width: 80%;
+}
+
+.producto h1 {
+    margin-top: 15px;
+    color: rgb(0, 132, 255);
+    text-decoration: underline;
+}
+
+.producto h2 {
+    color: rgb(0, 132, 255);
+}
+
+.producto iframe {
+    margin: 12px 0px;
+}
+
+/* RESPONSIVE DEL NAV */
+@media (max-width: 790px) {
+    .producto iframe {
+        width: 100%;
+        margin: 12px 0px;
+    }
+    
+    header {
+        justify-content: center;
+    }
+
+
+    #nosotros p {
+        width: 90%;
+    }
+    
+    header nav {
+        background-color: rgb(70, 163, 250);
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    header span {
+        margin-top: 20px;
+    }
+}
+
+/* RESPONSIVE PRODUCTOS */
+@media (max-width: 680px) {
+    #productos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main {
+        width: 86%;
+    }
+}
+
+@media (max-width: 580px) {
+    main {
+        width: 95%;
+        padding-bottom: 110px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    #productos {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        width: 80%;
+    }
+}

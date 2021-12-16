@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <span><strong>Navegación</strong></span>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../index.html#nosotros">Nosotros</a></li>
+                <li><a href="../index.html#productos">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contacto</h1>
+        
+        <form action="#">
+            <fieldset>
+                <legend>Formulario</legend>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" placeholder="Nombre">
+
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido" placeholder="Apellido">
+                </div>
+                <br>
+                <div>
+                    <label for="nacionalidad">País de origen:</label>
+                    <select name="nacionalidad">
+                        <option value="Argentina">Argentina</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Perú">Perú</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Colombia">Colombia</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="email">* Email:</label>
+                    <input placeholder="Email" type="email" name="email" required>
+                </div>
+                <br>
+                <div>
+                    <label for="mensaje">Mensaje:</label> <br>
+                    <textarea name="mensaje" placeholder="..." cols="55" rows="10"></textarea>
+                </div>
+                <br>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Resetear">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer id="footer">
+        <em><h4 align="center">Desarrollado por Matías Toso</h4></em>
+    </footer>
+</body>
+</html>
