@@ -5,10 +5,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
 /* estilos del header */
-
 /* AÑADIENDO FLEXBOX EN EL NAV!!!!!!! */
-
 header {
     display: flex;
     justify-content: space-between;
@@ -16,7 +15,7 @@ header {
     align-items: center;
 
     text-align: end;
-    background: rgb(0, 132, 255);
+    background: linear-gradient(to right, rgb(49, 218, 210), rgb(0, 132, 255));
     position: sticky;
     top: 0;
     left: 0;
@@ -67,6 +66,10 @@ header nav li a {
     padding: 30px 0px;
 }
 
+#nosotros h1 {
+    font-size: 2.8rem;
+}
+
 #nosotros img {
     margin: 20px 0px;
     border-radius: 15px;
@@ -101,7 +104,7 @@ main {
 main h2 {
     margin-top: 20px;
     text-align: center;
-    color: rgb(0, 132, 255);
+    color: rgb(0, 35, 68);
     font-size: 32px;
     margin-bottom: 10px;
     font-style: italic;
@@ -123,16 +126,17 @@ main h2 {
 }
 
 #productos article a {
-    background: rgb(0, 132, 255);
+    background: linear-gradient(to right, rgb(49, 218, 210), rgb(0, 132, 255));
     color: white;
     text-decoration: none;
     padding: 5px 10px;
+    box-shadow: 1px 1px 6px rgba(0, 35, 68, 0.733);
     border-radius: 18px 10px;
 }
 
 /* estilos del footer */
 #footer h4{
-    background: rgb(0, 132, 255);
+    background: rgb(0, 35, 68);
     color: white;
     margin-top: 30px;
     padding: 20px 0px;
@@ -150,20 +154,27 @@ main h2 {
 
 .producto h1 {
     margin-top: 15px;
-    color: rgb(0, 132, 255);
-    text-decoration: underline;
+    color: rgb(0, 35, 68);
 }
 
 .producto h2 {
-    color: rgb(0, 132, 255);
+    color: rgb(0, 35, 68);
 }
 
 .producto iframe {
     margin: 12px 0px;
 }
 
+#productos article h3 {
+    color: rgb(0, 35, 68);
+}
+
 /* RESPONSIVE DEL NAV */
 @media (max-width: 790px) {
+    body {
+        font-size: 15px;
+    }
+
     .producto iframe {
         width: 100%;
         margin: 12px 0px;
@@ -177,9 +188,13 @@ main h2 {
     #nosotros p {
         width: 90%;
     }
+
+    #nosotros h1 {
+        font-size: 2.3rem;
+    }
     
     header nav {
-        background-color: rgb(70, 163, 250);
+        background-color: linear-gradient(to right, rgb(49, 218, 210), rgb(0, 132, 255));
         margin-top: 10px;
         width: 100%;
     }
@@ -204,6 +219,10 @@ main h2 {
     main {
         width: 95%;
         padding-bottom: 110px;
+    }
+    
+    #nosotros h1 {
+        font-size: 2.1rem;
     }
 }
 
