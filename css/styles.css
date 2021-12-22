@@ -3,6 +3,11 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 
@@ -29,6 +34,10 @@ header span{
     font-size: 21px;
     font-style: italic;
     margin-left: 5%;
+
+    /* animacion */
+    animation-name: aparecerIzquierda;
+    animation-duration: 1s;
 }
 
 
@@ -41,6 +50,10 @@ header nav ul {
     justify-content: space-evenly;
     align-items: center;
     padding: 20px;
+
+    /* animacion */
+    animation-name: aparecerDerecha;
+    animation-duration: 1s;
 }
 
 header nav li{
@@ -68,17 +81,29 @@ header nav li a {
 
 #nosotros h1 {
     font-size: 2.8rem;
+
+    /* animacion */
+    animation-name: aparecer;
+    animation-duration: 1s;
 }
 
 #nosotros img {
     margin: 20px 0px;
     border-radius: 15px;
     box-shadow: 3px 3px 15px #333;
+
+    /* animacion */
+    animation-name: aparecer;
+    animation-duration: 1s;
 }
 
 #nosotros p {
     margin: 0px auto;
     width: 50%;
+
+    /* animacion */
+    animation-name: aparecer;
+    animation-duration: 1s;
 }
 
 /* estilos de los productos */
@@ -111,7 +136,7 @@ main h2 {
 }
 
 #productos article h3 {
-    margin: 8px 0px;
+    margin: 10px 0px;
 }
 
 #productos article img {
@@ -127,11 +152,16 @@ main h2 {
 
 #productos article a {
     background: linear-gradient(to right, rgb(49, 218, 210), rgb(0, 132, 255));
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
     box-shadow: 1px 1px 6px rgba(0, 35, 68, 0.733);
     border-radius: 18px 10px;
+    text-decoration: none;
+    transition: all .5s;
+    padding: 5px 10px;
+    color: white;
+}
+
+#productos article a:hover {
+    box-shadow: 3px 3px 7px rgba(0, 35, 68, 0.733);
 }
 
 /* estilos del footer */
@@ -163,16 +193,59 @@ main h2 {
 
 .producto iframe {
     margin: 12px 0px;
+
+    /* animacion */
+    animation-name: aparecer;
+    animation-duration: 1.1s;
 }
 
 #productos article h3 {
     color: rgb(0, 35, 68);
 }
 
+/* ANIMACIONES */
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    } 100% {
+        opacity: 1;
+    }
+}
+
+@keyframes aparecerIzquierda {
+    0% {
+        transform: translateX(-300px);
+    } 100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes aparecerDerecha {
+    0% {
+        transform: translateX(300px);
+    } 100% {
+        transform: translateX(0px);
+    }
+}
+
 /* RESPONSIVE DEL NAV */
 @media (max-width: 790px) {
     body {
         font-size: 15px;
+    }
+
+    header nav {
+        background-color: linear-gradient(to right, rgb(49, 218, 210), rgb(0, 132, 255));
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+    header span {
+        margin-top: 20px;
+    }
+    
+    #productos {
+        grid-template-columns: 1fr 1fr;
     }
 
     .producto iframe {
@@ -192,24 +265,14 @@ main h2 {
     #nosotros h1 {
         font-size: 2.3rem;
     }
-    
-    header nav {
-        background-color: linear-gradient(to right, rgb(49, 218, 210), rgb(0, 132, 255));
-        margin-top: 10px;
-        width: 100%;
-    }
 
-    header span {
-        margin-top: 20px;
+    #footer {
+        margin-top: 70px;
     }
 }
 
 /* RESPONSIVE PRODUCTOS */
 @media (max-width: 680px) {
-    #productos {
-        grid-template-columns: 1fr 1fr;
-    }
-
     main {
         width: 86%;
     }
@@ -234,5 +297,9 @@ main h2 {
 
     main {
         width: 80%;
+    }
+
+    #footer {
+        margin-top: 0px;
     }
 }
