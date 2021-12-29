@@ -1,0 +1,39 @@
+/* estilos del main */
+#nosotros {
+    background-image: url("../images/fondo-vaca.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 3px #111;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+#nosotros h1 {
+    font-size: 2.8rem;
+
+    /* animacion */
+    animation-name: aparecer;
+    animation-duration: 1s;
+}
+
+#nosotros img {
+    margin: 20px 0px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 15px #333;
+
+    /* animacion */
+    animation-name: aparecer;
+    animation-duration: 1s;
+}
+
+#nosotros p {
+    margin: 0px auto;
+    width: 50%;
+
+    /* animacion */
+    animation-name: aparecer;
+    animation-duration: 1s;
+}

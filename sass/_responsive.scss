@@ -1,0 +1,75 @@
+/* RESPONSIVE DEL NAV */
+@media (max-width: 790px) {
+    body {
+        font-size: 15px;
+    }
+
+    header nav {
+        background-color: linear-gradient(to right, rgb(49, 218, 210), rgb(0, 132, 255));
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+    header span {
+        margin-top: 20px;
+    }
+    
+    #productos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .producto iframe {
+        width: 100%;
+        margin: 12px 0px;
+    }
+    
+    header {
+        justify-content: center;
+    }
+
+
+    #nosotros p {
+        width: 90%;
+    }
+
+    #nosotros h1 {
+        font-size: 2.3rem;
+    }
+
+    #footer {
+        margin-top: 70px;
+    }
+}
+
+/* RESPONSIVE PRODUCTOS */
+@media (max-width: 680px) {
+    main {
+        width: 86%;
+    }
+}
+
+@media (max-width: 580px) {
+    main {
+        width: 95%;
+        padding-bottom: 110px;
+    }
+    
+    #nosotros h1 {
+        font-size: 2.1rem;
+    }
+}
+
+
+@media (max-width: 550px) {
+    #productos {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        width: 80%;
+    }
+
+    #footer {
+        margin-top: 0px;
+    }
+}

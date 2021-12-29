@@ -1,0 +1,55 @@
+/* estilos del header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    text-align: end;
+    background: linear-gradient(to right, rgb(49, 218, 210), rgb(0, 132, 255));
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    // span
+    &-logo {
+        color: white;
+        font-weight: 600;
+        text-shadow: 1px 1px 2px #222;
+        font-size: 21px;
+        font-style: italic;
+        margin-left: 5%;
+
+        // animacion
+        animation-name: aparecerIzquierda;
+        animation-duration: 1s;
+    }
+
+    // nav
+    &-nav {
+        width: 50%;
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 20px;
+
+            // animacion
+            animation-name: aparecerDerecha;
+            animation-duration: 1s;
+
+            a {
+                color: white;
+                text-align: end;
+                text-decoration: none;
+
+                // hover
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
