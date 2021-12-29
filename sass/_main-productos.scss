@@ -1,57 +1,57 @@
 /* estilos de los productos */
-
-/* AGREGANDO GRID!!! */
-#productos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    justify-items: center;
-    gap: 5%;
-
-    padding: 20px 0px;
-    text-align: center;
-}
-
-main {
+.productos {
     margin-right: auto;
     margin-left: auto;
     width: 94%;
-}
 
-main h2 {
-    margin-top: 20px;
-    text-align: center;
-    color: rgb(0, 35, 68);
-    font-size: 32px;
-    margin-bottom: 10px;
-    font-style: italic;
-}
+    h2 {
+        margin-top: 20px;
+        text-align: center;
+        color: rgb(0, 35, 68);
+        font-size: 32px;
+        margin-bottom: 10px;
+        font-style: italic;
+    }
 
-#productos article h3 {
-    margin: 10px 0px;
-}
+    // contenedor
+    &-contenedor {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-items: center;
+        gap: 5%;
+    
+        padding: 20px 0px;
+        text-align: center;
 
-#productos article img {
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: 1px 1px 5px #444;
-    height: 200px;
-}
+        h3 {
+            margin: 10px 0px;
+            color: rgb(0, 35, 68);
+        }
 
-#productos article p {
-    margin-bottom: 10px;
-}
+        img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 1px 1px 5px #444;
+            height: 200px;
+        }
 
-#productos article a {
-    background: linear-gradient(to right, rgb(49, 218, 210), rgb(0, 132, 255));
-    box-shadow: 1px 1px 6px rgba(0, 35, 68, 0.733);
-    border-radius: 18px 10px;
-    text-decoration: none;
-    transition: all .5s;
-    padding: 5px 10px;
-    color: white;
-}
+        p {
+            margin-bottom: 10px;
+        }
 
-#productos article a:hover {
-    box-shadow: 3px 3px 7px rgba(0, 35, 68, 0.733);
+        a {
+            background: linear-gradient(to right, rgb(49, 218, 210), rgb(0, 132, 255));
+            box-shadow: 1px 1px 6px rgba(0, 35, 68, 0.733);
+            border-radius: 18px 10px;
+            text-decoration: none;
+            transition: all .5s;
+            padding: 5px 10px;
+            color: white;
+
+            &:hover {
+                box-shadow: 3px 3px 7px rgba(0, 35, 68, 0.733);
+            }
+        }
+    }
 }

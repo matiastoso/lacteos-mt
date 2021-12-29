@@ -16,24 +16,6 @@ body { overflow-x: hidden; }
 
 .header-nav ul a:hover { text-decoration: underline; }
 
-/* estilos de los productos */
-/* AGREGANDO GRID!!! */
-#productos { display: -ms-grid; display: grid; -ms-grid-columns: (1fr)[3]; grid-template-columns: repeat(3, 1fr); -webkit-box-align: center; -ms-flex-align: center; align-items: center; justify-items: center; gap: 5%; padding: 20px 0px; text-align: center; }
-
-main { margin-right: auto; margin-left: auto; width: 94%; }
-
-main h2 { margin-top: 20px; text-align: center; color: #002344; font-size: 32px; margin-bottom: 10px; font-style: italic; }
-
-#productos article h3 { margin: 10px 0px; }
-
-#productos article img { width: 100%; border-radius: 12px; -webkit-box-shadow: 1px 1px 5px #444; box-shadow: 1px 1px 5px #444; height: 200px; }
-
-#productos article p { margin-bottom: 10px; }
-
-#productos article a { background: -webkit-gradient(linear, left top, right top, from(#31dad2), to(#0084ff)); background: linear-gradient(to right, #31dad2, #0084ff); -webkit-box-shadow: 1px 1px 6px rgba(0, 35, 68, 0.733); box-shadow: 1px 1px 6px rgba(0, 35, 68, 0.733); border-radius: 18px 10px; text-decoration: none; -webkit-transition: all .5s; transition: all .5s; padding: 5px 10px; color: white; }
-
-#productos article a:hover { -webkit-box-shadow: 3px 3px 7px rgba(0, 35, 68, 0.733); box-shadow: 3px 3px 7px rgba(0, 35, 68, 0.733); }
-
 /* estilos del main */
 .nosotros { background-image: url("../images/fondo-vaca.jpg"); background-attachment: fixed; background-repeat: no-repeat; background-position: center; background-size: cover; color: white; text-shadow: 2px 2px 3px #111; text-align: center; padding: 30px 0px; }
 
@@ -43,8 +25,25 @@ main h2 { margin-top: 20px; text-align: center; color: #002344; font-size: 32px;
 
 .nosotros-texto { margin: 0px auto; width: 50%; -webkit-animation-name: aparecer; animation-name: aparecer; -webkit-animation-duration: 1s; animation-duration: 1s; }
 
+/* estilos de los productos */
+.productos { margin-right: auto; margin-left: auto; width: 94%; }
+
+.productos h2 { margin-top: 20px; text-align: center; color: #002344; font-size: 32px; margin-bottom: 10px; font-style: italic; }
+
+.productos-contenedor { display: -ms-grid; display: grid; -ms-grid-columns: (1fr)[3]; grid-template-columns: repeat(3, 1fr); -webkit-box-align: center; -ms-flex-align: center; align-items: center; justify-items: center; gap: 5%; padding: 20px 0px; text-align: center; }
+
+.productos-contenedor h3 { margin: 10px 0px; color: #002344; }
+
+.productos-contenedor img { width: 100%; border-radius: 12px; -webkit-box-shadow: 1px 1px 5px #444; box-shadow: 1px 1px 5px #444; height: 200px; }
+
+.productos-contenedor p { margin-bottom: 10px; }
+
+.productos-contenedor a { background: -webkit-gradient(linear, left top, right top, from(#31dad2), to(#0084ff)); background: linear-gradient(to right, #31dad2, #0084ff); -webkit-box-shadow: 1px 1px 6px rgba(0, 35, 68, 0.733); box-shadow: 1px 1px 6px rgba(0, 35, 68, 0.733); border-radius: 18px 10px; text-decoration: none; -webkit-transition: all .5s; transition: all .5s; padding: 5px 10px; color: white; }
+
+.productos-contenedor a:hover { -webkit-box-shadow: 3px 3px 7px rgba(0, 35, 68, 0.733); box-shadow: 3px 3px 7px rgba(0, 35, 68, 0.733); }
+
 /* estilos del footer */
-#footer h4 { background: #002344; color: white; margin-top: 30px; padding: 20px 0px; }
+.footer h4 { background: #002344; color: white; margin-top: 30px; padding: 20px 0px; }
 
 /* estilos especifico de los productos */
 .producto { text-align: center; }
@@ -55,9 +54,7 @@ main h2 { margin-top: 20px; text-align: center; color: #002344; font-size: 32px;
 
 .producto h2 { color: #002344; }
 
-.producto iframe { margin: 12px 0px; /* animacion */ -webkit-animation-name: aparecer; animation-name: aparecer; -webkit-animation-duration: 1.1s; animation-duration: 1.1s; }
-
-#productos article h3 { color: #002344; }
+.producto iframe { margin: 12px 0px; -webkit-animation-name: aparecer; animation-name: aparecer; -webkit-animation-duration: 1.1s; animation-duration: 1.1s; }
 
 /* RESPONSIVE DEL NAV */
 @media (max-width: 790px) { body { font-size: 15px; }
