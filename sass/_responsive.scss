@@ -1,20 +1,24 @@
-/* RESPONSIVE DEL NAV */
+/* responsive */
 @media (max-width: 790px) {
     body {
         font-size: 15px;
     }
 
-    header nav {
-        background-color: linear-gradient(to right, rgb(49, 218, 210), rgb(0, 132, 255));
-        margin-top: 10px;
-        width: 100%;
+    .header {
+        justify-content: center;
+
+        &-logo {
+            margin: 20px 0px 0px 0px;
+        }
+
+        &-nav {
+            background-color: linear-gradient(to right, rgb(49, 218, 210), rgb(0, 132, 255));
+            margin-top: 10px;
+            width: 100%;
+        }
     }
     
-    header span {
-        margin-top: 20px;
-    }
-    
-    #productos {
+    .productos-contenedor {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -27,49 +31,50 @@
         justify-content: center;
     }
 
+    .nosotros {
+        p {
+            width: 90%;
+        }
 
-    #nosotros p {
-        width: 90%;
+        h1 {
+            font-size: 2.3rem;
+        }
     }
 
-    #nosotros h1 {
-        font-size: 2.3rem;
-    }
-
-    #footer {
+    .footer {
         margin-top: 70px;
     }
 }
 
-/* RESPONSIVE PRODUCTOS */
+/* responsive productos */
 @media (max-width: 680px) {
-    main {
+    .productos {
         width: 86%;
     }
 }
 
 @media (max-width: 580px) {
-    main {
+    .productos {
         width: 95%;
         padding-bottom: 110px;
     }
     
-    #nosotros h1 {
+    .nosotros-titulo {
         font-size: 2.1rem;
     }
 }
 
 
 @media (max-width: 550px) {
-    #productos {
-        grid-template-columns: 1fr;
-    }
-
-    main {
+    .productos {
         width: 80%;
+
+        &-contenedor {
+            grid-template-columns: 1fr;
+        }
     }
 
-    #footer {
+    .footer {
         margin-top: 0px;
     }
 }
