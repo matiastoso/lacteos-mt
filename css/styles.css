@@ -38,9 +38,9 @@ body { overflow-x: hidden; }
 
 .productos-contenedor p { margin-bottom: 10px; }
 
-.productos-contenedor a { background: -webkit-gradient(linear, left top, right top, from(#31dad2), to(#0084ff)); background: linear-gradient(to right, #31dad2, #0084ff); -webkit-box-shadow: 1px 1px 6px rgba(0, 35, 68, 0.733); box-shadow: 1px 1px 6px rgba(0, 35, 68, 0.733); border-radius: 18px 10px; text-decoration: none; -webkit-transition: all .5s; transition: all .5s; padding: 5px 10px; color: white; }
+.productos-contenedor a { background: -webkit-gradient(linear, left top, right top, from(#31dad2), to(#0084ff)); background: linear-gradient(to right, #31dad2, #0084ff); -webkit-box-shadow: 1px 1px 6px rgba(0, 35, 68, 0.7); box-shadow: 1px 1px 6px rgba(0, 35, 68, 0.7); border-radius: 18px 10px; text-decoration: none; -webkit-transition: all .5s; transition: all .5s; padding: 5px 10px; color: white; }
 
-.productos-contenedor a:hover { -webkit-box-shadow: 3px 3px 7px rgba(0, 35, 68, 0.733); box-shadow: 3px 3px 7px rgba(0, 35, 68, 0.733); }
+.productos-contenedor a:hover { -webkit-box-shadow: 3px 3px 7px rgba(0, 35, 68, 0.7); box-shadow: 3px 3px 7px rgba(0, 35, 68, 0.7); }
 
 /* estilos del footer */
 .footer h4 { background: #002344; color: white; margin-top: 30px; padding: 20px 0px; }

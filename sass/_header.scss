@@ -6,7 +6,7 @@
     align-items: center;
 
     text-align: end;
-    background: linear-gradient(to right, rgb(49, 218, 210), rgb(0, 132, 255));
+    background: linear-gradient(to right, $color-primario, $color-secundario);
     position: sticky;
     top: 0;
     left: 0;
